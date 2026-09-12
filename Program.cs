@@ -1,4 +1,4 @@
-﻿namespace Who_Wants_to_Be_a_Millionare
+namespace Who_Wants_to_Be_a_Millionare
 {
     internal class Program
     {
@@ -110,12 +110,13 @@
                     Console.WriteLine($"Wrong Answer.\nYou've managed to aquire {score} points before you lost the game!");
                     return;
                 }
-                score =+ 1000; //increment score after the question was answered correctly
+                score += 1000; //increment score after the question was answered correctly
                 question++; //go to the next question
 
-                if (question >= 5)
+                if (question >= 5+1)
                 {
                     Console.WriteLine($"Congrats on completing this game!\nYou've managed to aquire {score} points!!!");
+                    return;
                 }
             }
 
